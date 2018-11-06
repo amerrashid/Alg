@@ -10,3 +10,10 @@ for t in range(11):
         print("x", end = " ")
     print()
 print ("Program run has ended")
+
+for y in range(0,11):
+    print(str(y)+": ", end="")
+    for x in range(y):
+        print("*", end="")
+    print()
+print ("Program run has ended")
