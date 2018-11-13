@@ -1,0 +1,7 @@
+a = input("Enter a String:")
+print("In UPPERCASE, you entered " + a.upper())
+print("In Titlecase, you entered " + a.title())
+print("In lowercase, you entered " + a.lower())
+print("The length is " + str(len(a)))
+print(a.replace("!", "."))
+print(a.upper().replace("!", "."))
