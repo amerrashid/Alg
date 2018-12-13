@@ -6,11 +6,12 @@ class BankAccount:
 
     def deposit(self, x):
 
-        return self.balance + x
+        self.balance += x
+    
 
     def withdraw (self, y):
 
-        return self.balance - y
+        self.balance -= y
 
 b = BankAccount (10)
 
