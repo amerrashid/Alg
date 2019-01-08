@@ -41,7 +41,15 @@ class Order():
     def add_item(self, i : Item):
         self.items.append(i)
 
-    
+    #def remove_item(self):
+
+    def get_item_count(self):
+        return len(self.items)
+
+    #def get_total_gst(self):
+        
+
+
 
 x = Item (1, "bread", 5, True)
 
