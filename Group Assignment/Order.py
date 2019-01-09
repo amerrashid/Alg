@@ -48,6 +48,7 @@ class Order:
         print("Order Number : " + str(self.orderno))
         print("Order Date : " + str(self.purchase_date.strftime("%Y-%m-%d %I:%M%p").lower()))
 
+        print()
         for item in self.items:
             print(item.print_item(36))
         subtotal = self.get_total_price()
@@ -55,6 +56,7 @@ class Order:
         total_qst = self.get_total_qst()
         total = subtotal + total_gst + total_qst
 
+        print()
         print("Sub Total : $ {:0.2f}".format(float(subtotal)))
         print("Total GST : $ {:0.2f}".format(float(total_gst)))
         print("Total QST : $ {:0.2f}".format(float(total_qst)))
