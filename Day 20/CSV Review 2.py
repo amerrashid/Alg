@@ -11,7 +11,7 @@ with open("biostats.csv") as in_file:
         row[3] = round(float(row[3])*2.54)
         row[4] = round(float(row[4])*0.454)
         biostats_info.append(row)
-        row_count += 1
+        #row_count += 1
 
 
     with open("stats.csv", 'w', newline='') as out_file:

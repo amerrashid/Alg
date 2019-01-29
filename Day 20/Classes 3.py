@@ -1,3 +1,4 @@
+import random
 numList = [1, 2, 3, 4]
 nums = 0
 tot = 0
@@ -31,10 +32,19 @@ class Calculator:
 
     def rand_gen(self, numList, x, y, z):
 
+        cnt = 0
+        while cnt < x:
+            rand = random.randint(y,z)
+            numList.append(rand)
+            cnt += 1
+        print (numList)
+
+
+
 c = Calculator(numList)
 #cv = c.clr(numList)
 av = c.get_average(numList)
 mx = c.get_max(numList)
 mx = c.get_min(numList)
-
+gen = c.rand_gen(numList, 3, 8, 10)
 
