@@ -43,7 +43,7 @@ class Employee (Worker):
         return self.__salary
 
     def get_hourly_rate(self):
-        
+
 
     def get_hr(self, hrsWork):
         self.hrsWork = hrsWork
